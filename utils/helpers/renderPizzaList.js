@@ -28,7 +28,11 @@ export const renderPizzaList = (sortedList) => {
 				<div class='pizza_item-info'>
 					<div class='pizza_item-title-wrap mb-5'>
 						<h3 class='pizza_item-title'>${capitalizeFirstLetter(name)}</h3>
+						<div class='pizza_item-heat-wrap'>
+						
 						${pizzaHeatRating(heat)}
+
+					</div>
 					</div>
 					<div class='pizza_item-price-wrap'>
 						<span class='pizza_item-price'>€ ${price}</span>

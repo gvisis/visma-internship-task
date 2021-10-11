@@ -28,7 +28,7 @@
 				<form class="form_container">
 					<div class="form_container-left">
 						<div class='form_row'>
-							<select class="select-input" name="allPizzas" id="pizza-photo-select">
+							<select class="select-input" id="pizza-photo-select">
 								<option selected value="defaultPizza">Select Photo</option>
 								<option value="pizza01">Pizza 1</option>
 								<option value="pizza02">Pizza 2</option>
@@ -46,15 +46,15 @@
 					<div class="form_container-right">
 						<div class='form_row'>
 							<label class='form_row-label'>Name:</label>
-							<input class='form_row-input' type="text" maxlength="30" id="pizza-name" value="">
+							<input class='form_row-input' type="text" maxlength="30" id="pizza-name">
 						</div>
 						<div class='form_row'>
 							<label class='form_row-label'>Price:</label>
-							<input class='form_row-input' type="number" min="0" step=".01" id="pizza-price" value="">
+							<input class='form_row-input' type="number" min="0" max="1000" maxlength="3" step=".01" id="pizza-price">
 						</div>
 						<div class='form_row'>
 							<label class='form_row-label'>Heat:</label>
-							<select class='form_row-input select-input' name="heat" id="pizza-heat">
+							<select class='form_row-input select-input' id="pizza-heat">
 								<option selected disabled value="null">Select heat</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -66,7 +66,7 @@
 							<div class='checkboxes-wrap'></div>
 						</div>
 						<div class='form_row button_row'>
-							<button class="add_button" id="add-pizza">Add pizza</button>
+							<button type="submit" class="add_button" id="add-pizza">Add pizza</button>
 						</div>
 					</div>
 				</form>
