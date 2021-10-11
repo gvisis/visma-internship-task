@@ -1,0 +1,19 @@
+/* BUTTON */
+.form_row.button_row {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.form_row.button_row > .add_button{
+	background-color: transparent;
+	border: 1px solid #dbdbdb;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #a66c48;
+	font-size: 1em;
+}
+.form_row.button_row > .add_button:hover{
+	background-color: #a66c48;
+	color: #fff;
+	cursor: pointer;
+}

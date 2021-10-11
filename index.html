@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/styles/index.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script type="module" src="./assets/js/index.js" defer></script>
+	<title>Visma front end internship task</title>
+</head>
+
+<body>
+	<header class='header'>
+		<h1 class='header_title'>
+			Pizzeria
+		</h1>
+	</header>
+	<main class="container">
+		<section class="container_row">
+			<div class="container_title-wrap">
+				<h2 class='row-title'>Create new pizza</h2>
+			</div>
+			<div class="container_content-wrap">
+				<form class="form_container">
+					<div class="form_container-left">
+						<div class='form_row'>
+							<select class="select-input" name="allPizzas" id="pizza-photo-select">
+								<option selected value="defaultPizza">Select Photo</option>
+								<option value="pizza01">Pizza 1</option>
+								<option value="pizza02">Pizza 2</option>
+								<option value="pizza03">Pizza 3</option>
+								<option value="pizza04">Pizza 4</option>
+								<option value="pizza05">Pizza 5</option>
+							</select>
+						</div>
+						<!-- selected photo -->
+						<div class="pizza_item-photo-wrap">
+							<img class="pizza-image" src="./assets/images/defaultPizza.png" alt="No picture selected"
+								id="pizza-photo-preview">
+						</div>
+					</div>
+					<div class="form_container-right">
+						<div class='form_row'>
+							<label class='form_row-label'>Name:</label>
+							<input class='form_row-input' type="text" maxlength="30" id="pizza-name" value="">
+						</div>
+						<div class='form_row'>
+							<label class='form_row-label'>Price:</label>
+							<input class='form_row-input' type="number" min="0" step=".01" id="pizza-price" value="">
+						</div>
+						<div class='form_row'>
+							<label class='form_row-label'>Heat:</label>
+							<select class='form_row-input select-input' name="heat" id="pizza-heat">
+								<option selected disabled value="null">Select heat</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+						<div class='form_row checkboxes'>
+							<span class='form_row-label toppings-row'>Toppings:</span>
+							<div class='checkboxes-wrap'></div>
+						</div>
+						<div class='form_row button_row'>
+							<button class="add_button" id="add-pizza">Add pizza</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="container_row">
+			<div class="container_title-wrap">
+				<h2 class='row-title'>Pizza menu</h2>
+			</div>
+			<div class="container_content-wrap">
+				<div class='sort-wrap form_row'>
+					<label class="form_row-label" for='sortby'>
+						Sort by:
+					</label>
+					<select class="select-input" id="sort-by">
+						<options>
+							<option value="name">Name</option>
+							<option value="price">Price</option>
+							<option value="heat">Heat</option>
+						</options>
+					</select>
+				</div>
+				<div class='pizza_list'>
+				</div>
+		</section>
+		</form>
+		</section>
+	</main>
+</body>
+
+</html>
