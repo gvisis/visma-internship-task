@@ -21,7 +21,7 @@ addPizzaButton.addEventListener('click', (e) => {
 				return selectedToppings;
 			}
 		}
-		isFormValid(pizzaName.value, pizzaHeat.value, pizzaPrice.value);
+		isFormValid(pizzaName.value, pizzaPrice.value);
 		const selectedToppings = getSelectedToppings()
 		const pizza = {
 			id: '_' + Math.random().toString(36).substring(2, 9),

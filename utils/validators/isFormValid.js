@@ -1,4 +1,4 @@
-export const isFormValid = (pizzaName, pizzaHeat, pizzaPrice) => {
+export const isFormValid = (pizzaName, pizzaPrice) => {
 	if (pizzaName === '') {
 		throw new Error('Please enter correct pizza name');
 	}
